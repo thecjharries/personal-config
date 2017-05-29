@@ -1,5 +1,6 @@
 [core]
-        autocrlf = false
+        autocrlf = input
+        editor = nano
 [color]
         ui = true
 [alias]
