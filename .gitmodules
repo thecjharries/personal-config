@@ -1,0 +1,10 @@
+[submodule ".zprezto"]
+	path = .zprezto
+	url = https://github.com/sorin-ionescu/prezto
+        fetchRecurseSubmodules = true
+        ignore = untracked
+[submodule ".nano"]
+	path = .nano
+	url = https://github.com/scopatz/nanorc.git
+	fetchRecurseSubmodules = true
+	ignore = untracked

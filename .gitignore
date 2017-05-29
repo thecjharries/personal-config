@@ -1,0 +1,5 @@
+personal-config.log
+npm-debug.log
+.idea
+.sublime*
+fake*
