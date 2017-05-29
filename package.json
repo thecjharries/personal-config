@@ -1,14 +1,36 @@
 {
-    "name": "@thecjharries/personal-config",
-    "version": "0.0.0",
-    "description": "My personal dotfiles setup",
-    "main": "dist/index.js",
-    "scripts": {
-        "test": "cross-env NODE_ENV=test nyc mocha"
-    },
-    "author": "CJ Harries <cj@wizardsoftheweb.pro",
-    "license": "ISC",
-    "devDependencies": {
-        "cross-env": "^5.0.0"
-    }
+   "name": "@thecjharries/personal-config",
+   "version": "0.0.0",
+   "description": "My personal dotfiles setup",
+   "main": "dist/index.js",
+   "scripts": {
+      "test": "cross-env NODE_ENV=test nyc mocha"
+   },
+   "author": "CJ Harries <cj@wizardsoftheweb.pro",
+   "license": "ISC",
+   "devDependencies": {
+      "cross-env": "^5.0.0",
+      "eslint": "^3.19.0",
+      "eslint-config-google": "^0.7.1"
+   },
+   "nyc": {
+      "include": [
+         "src/**/*.ts"
+      ],
+      "exclude": [
+         "src/interfaces.ts"
+      ],
+      "extension": [
+         ".ts"
+      ],
+      "require": [
+         "ts-node/register"
+      ],
+      "reporter": [
+         "json",
+         "html",
+         "text-summary"
+      ],
+      "all": true
+   }
 }
