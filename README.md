@@ -11,3 +11,6 @@ Initially I tried to set everything up as `zsh` scripts, which was a huge mistak
 ### `ts-node`
 
 Node does all of the things I want. I wrote it in TypeScript instead of vanilla JS for the experience. [ShellJS](https://github.com/shelljs/shelljs) even removes the annoyance of interfacing with the OS (sure, a native `sed` might be faster, but this is a limited use app, not a `* * * * *` `cron`).
+
+
+
