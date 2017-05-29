@@ -1,5 +1,12 @@
-personal-config.log
+# Node related
+node_modules
 npm-debug.log
+
+# Editors
 .idea
 .sublime*
+
+# Repo specific
+personal-config.log
+
 fake*
