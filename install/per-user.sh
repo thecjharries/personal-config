@@ -102,6 +102,10 @@ find_mode=$([[ -n "$test" ]] && echo "-print" || echo "-print") #TODO: swap out 
 function safe_find() {
     maxdepth=(0)
     zparseopts -D -K -M -E -- name:=name maxdepth:-=maxdepth
+    find_com="find ${1:-.}"
+    [[ 0 -lt "$maxdepth" ]] && find_com+=" -maxdepth $maxdepth"
+    ([[ -n $name ]] && find_com+=" -name $name"
+    find_com+="$find_mode"
     find "${1:-.}"$([[ 0 -lt "$maxdepth" ]] && echo " -maxdepth $maxdepth") "$find_mode"$([[ -n $name ]] && echo " -name $name")
 }
 
